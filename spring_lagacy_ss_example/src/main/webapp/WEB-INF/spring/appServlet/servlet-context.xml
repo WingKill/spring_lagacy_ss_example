@@ -22,8 +22,5 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="edu.sejong.ex.controller" />
-	
-	
-	
+	<context:component-scan base-package="edu.sejong.ex" />
 </beans:beans>

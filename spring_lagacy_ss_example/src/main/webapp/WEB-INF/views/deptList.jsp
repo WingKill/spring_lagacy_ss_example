@@ -13,27 +13,24 @@
 <table border="1">
 	<thead>
 		<tr>
-			<th>사원번호</th>
-			<th>사원명</th>
-			<th>직업</th>
-			<th>월급</th>
+			<th>부서번호</th>
+			<th>부서명</th>
+			<th>지역</th>
 		</tr>
 	</thead>
 	<tfoot>
 		<tr>
-			<th>사원번호</th>
-			<th>사원명</th>
-			<th>직업</th>
-			<th>월급</th>
+			<th>부서번호</th>
+			<th>부서명</th>
+			<th>지역</th>
 		</tr>
 	</tfoot>
 	<tbody>
-		<c:forEach var="emp" items="${emps}">
+		<c:forEach var="dept" items="${depts}">
 			<tr>
-				<td>${emp.empno}</td>
-				<td>${emp.ename}</td>
-				<td>${emp.job}</td>
-				<td>${emp.sal}</td>
+				<td>${dept.deptno}</td>
+				<td>${dept.dname}</td>
+				<td>${dept.loc}</td>
 			</tr>
 		</c:forEach>
 	</tbody>
